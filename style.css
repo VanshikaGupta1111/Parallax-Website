@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wapper{
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+}
+.adventure{
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    z-index: -1;
+    object-fit: cover;
+}
+.background{
+    transform: translateZ(-40px) scale(5);
+}
+.foreground{
+    transform: translate(-20px) scale(1);
+
+}
+.background , .foreground{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    object-fit:cover ;
+
+}
+section{
+    background-color: rgb(45, 45, 45);
+    color: white;
+    padding: 3rem;
+}
+.content{
+    font-size: 2rem;
+    padding: 3rem;
+
+}
+
+.bg{
+    height: 500px;
+    width: 92%;
+    left: 40px;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    z-index:-0.9;
+}
+.bg1{
+    background-image: url(./image/Cycling.jpg);
+}
+.bg2{
+    background-image: url(./image/ParaGliding.webp);
+}
+.bg3{
+    background-image: url(./image/Surfing.jpg);
+}
+.content{
+    font-size: 1.5rem;
+    /* padding: 4rem; */
+    /* margin: 5rem 0; */
+}
+h1{
+    position: absolute;
+    top: 4rem;
+    font-size: 7.5rem;
+    letter-spacing: 4px;
+    color: white;
+    text-shadow: 0 0 10px rgb(0, 0, 0 ,0.4);
+}
+h2{
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    color: black;
+    background-color: white;
+    font-size: 3.3rem;
+    font-weight: 600;
+    padding: 0.5rem 2.5rem ;
+    /* transform: translateX(-50%) translateX(-50%); */
+}
+h3{
+    font-size: 5rem ;
+    padding: 1 3rem;
+    padding-bottom: 2rem;
+}
